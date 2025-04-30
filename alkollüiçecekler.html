@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıcak İçecekler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+            background: url('ALKOL.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+      
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .submenu {
+            display: none;
+            background-color: #444;
+            position: absolute;
+            width: 200px;
+        }
+
+        .submenu a {
+            padding-left: 30px;
+        }
+
+        .menu-container:hover .submenu {
+            display: block;
+            position: relative;
+        }
+
+        .contact {
+            margin-top: auto;
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+        }
+
+      
+        .content {
+            margin-left: 220px; /* Menü genişliğinden fazla bırak */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px;
+            gap: 20px;
+            width: calc(100% - 220px); 
+        }
+
+        .drink-panel {
+            background-color: #444;
+            padding: 25px;
+            width: 700px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .drink-panel img {
+            width: 60%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .drink-panel:hover {
+            background-color: #575757;
+            transform: scale(1.05);
+        }
+
+        .drink-panel h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="sidebar">
+        <div>
+            <div class="menu-container">
+                <a href="#" class="menu-toggle">İÇECEKLER</a>
+                <div class="submenu">
+                    <a href="soğukiçecekler.html">Soğuk İçecekler</a>
+                    <a href="sıcak içecekler.html">Sıcak İçecekler</a>
+                    <a href="alkollüiçecekler.html">Alkollü İçecekler</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="iletisim.html">Bize Ulaşın</a>
+        </div>
+    </div>
+
+    <!-- Ana İçerik -->
+    <div class="content">
+        
+        <div class="drink-panel">
+            <img src="GİNFİZZ.jpg" alt="ICE TEA">
+            <h2>GİN FİZZ</h2>
+            <h2>İçindekiler: Gin, Limon, Pudra Şekeri, Soda</h2>
+        </div>
+
+      
+        <div class="drink-panel">
+            <img src="margarita.jpg" alt="ICE AMERICANO
+            ">
+            <h2>MARGARITA</h2>
+            <h2>İçindekiler: Tequila, Limon, Portakal Likörü</h2>
+        </div>
+
+        
+        <div class="drink-panel">
+            <img src="VİSKİSOUR.jpg" alt="ICE LATTE">
+            <h2>VISKI SOUR</h2>
+            <h2>İçindekiler: Viski, limon, Şeker Şurubu, Yumurta</h2>
+        </div>
+
+       
+        <div class="drink-panel">
+            <img src="WHİTELADYjpg.jpg" alt="KOLA">
+            <h2>WHITE LADY</h2>
+            <h2>İçindekiler: Gin, Portakal Likörü, Limon, Şeker Şurubu, Yumurta</h2>
+        </div>
+
+        <div class="drink-panel">
+            <img src="Daiquiri-Tarifi.jpg" alt="CHURCHİLL">
+            <h2>DAİGUİRİ</h2>
+            <H2>İçindekiler: Rom, Limon, Şeker</H2>
+        </div>
+        <div class="drink-panel">
+            <img src="BATANGA.jpg" alt="İçecek 4">
+            <h2>BATANGA</h2>
+            <h2>İçindekiler: Tequila, Kola, Limon</h2>
+        </div>
+        <div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div>
+        <div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div><div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div><div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div><div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div><div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div><div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div><div class="drink-panel">
+            <img src="icecek4.jpg" alt="İçecek 4">
+            <h2>İçecek 4</h2>
+        </div>
+
+       
+    </div>
+
+</body>
+</html>

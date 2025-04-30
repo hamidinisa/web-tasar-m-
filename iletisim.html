@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Genel stil */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        /* Sol Menü */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .submenu {
+            display: none;
+            background-color: #444;
+            position: absolute;
+            width: 200px;
+        }
+
+        .submenu a {
+            padding-left: 30px;
+        }
+
+        .menu-container:hover .submenu {
+            display: block;
+            position: relative;
+        }
+
+        .contact {
+            margin-top: auto;
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+        }
+
+        /* İletişim Sayfası */
+        .content {
+            margin-left: 220px; /* Menü genişliğinden fazla bırak */
+            padding: 20px;
+            width: calc(100% - 220px); /* Sol menüyü hesaba katarak genişliği ayarla */
+        }
+
+        .contact-info {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sol Menü -->
+    <div class="sidebar">
+        <div>
+            <div class="menu-container">
+                <a href="#" class="menu-toggle">İÇECEKLER</a>
+                <div class="submenu">
+                    <a href="soğukiçecekler.html">Soğuk İçecekler</a>
+                    <a href="sıcak içecekler.html">Sıcak İçecekler</a>
+                    <a href="alkollüiçecekler.html">Alkollü İçecekler</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="iletisim.html">Bize Ulaşın</a>
+        </div>
+    </div>
+
+    <!-- Ana İçerik -->
+    <div class="content">
+        <div class="contact-info">
+            <h2>İletişim Bilgileri</h2>
+            <p><strong>Adres:</strong> Tolga'nın İçecek Evi, Balıkesir/Bandırma, Türkiye</p>
+            <p><strong>Telefon:</strong> <a href="tel:+90539332046">+90539332046</a></p>
+            <p><strong>E-posta:</strong> <a href="mailto:info@tolgainsicek.com">info@tolgainsicek.com</a></p>
+            <p><strong>Sosyal Medya:</strong></p>
+            <p>
+                 |
+                <a href="https://instagram.com/tolgasune" target="_blank">Instagram</a> |
+              
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

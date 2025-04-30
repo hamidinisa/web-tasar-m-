@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçecekler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background: url('anasayfa.jpg') no-repeat center center fixed;
+            background-size: cover;
+            
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .submenu {
+            display: none;
+            background-color: #444;
+            position: absolute;
+            width: 200px;
+        }
+        .submenu a {
+            padding-left: 30px;
+        }
+        .menu-container:hover .submenu {
+            display: block;
+            position: relative;
+        }
+        .contact {
+            margin-top: auto;
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+        }
+       
+        /* Floating Panel */
+        .floating-panel {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 600px;
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .floating-panel:hover {
+            width: 350px;
+            height: 200px;
+        }
+        .floating-panel h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .floating-panel p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 34px;
+            color: rgba(255, 248, 248, 0.929);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <div class="menu-container">
+                <a href="#" class="menu-toggle">İÇECEKLER</a>
+                <div class="submenu">
+                    <a href="soğukiçecekler.html">Soğuk İçecekler</a>
+                    <a href="sıcak içecekler.html">Sıcak İçecekler</a>
+                    <a href="alkollüiçecekler.html">Alkollü İçecekler</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <a href="iletisim.html">Bize Ulaşın</a>
+        </div>
+    </div>
+   
+    <div class="floating-panel">
+        <h1>TOLGA'NIN İÇECEK EVİ</h1>
+        <p>İçecek Dünyası olarak, lezzetli ve sağlıklı içecekleri keşfetmek için yola çıktık. 
+        Amacımız, her damak zevkine hitap eden özenle hazırlanmış içecek seçenekleri sunmaktır.</p>
+    </div>
+         <h1>THYKETHOR</h1>
+
+</body>
+</html>
